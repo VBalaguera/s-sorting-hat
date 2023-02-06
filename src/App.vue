@@ -144,7 +144,7 @@ export default {
 
       // automatically scrolls to the bottom of page
       await nextTick()
-      window.scrollTo(0, document.body.scrollHeight)
+      window.scrollTo(0, document.body.scrollHeight, { behavior: 'smooth' })
     },
     // and answered question to answeredQuestions array for displaying
     addAnsweredQuestion(question) {

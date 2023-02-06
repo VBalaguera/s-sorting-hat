@@ -320,7 +320,7 @@ export default {
         this.questionsIndex++
         this.askQuestion()
         await nextTick()
-        window.scrollTo(0, document.body.scrollHeight)
+        window.scrollTo(0, document.body.scrollHeight, { behavior: 'smooth' })
       }
     },
     checkIfLastRound() {
